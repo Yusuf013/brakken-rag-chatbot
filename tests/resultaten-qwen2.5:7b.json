@@ -1,0 +1,353 @@
+[
+  {
+    "vraag": "Hoe laat is school uit op woensdag?",
+    "verwacht": [
+      "12.15",
+      "12:15"
+    ],
+    "niet_verwacht": [
+      "18:30",
+      "18.30"
+    ],
+    "soort": "feit",
+    "antwoord": "Ja, op woensdag is school uit om 12:15 uur [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.619,
+    "seconden": 12.36
+  },
+  {
+    "vraag": "Hoe laat begint de school?",
+    "verwacht": [
+      "8.30",
+      "08:30",
+      "8:30"
+    ],
+    "soort": "feit",
+    "antwoord": "De school begint om 08:30 uur. Dit geldt voor groep 1 t/m 4 op maandag, dinsdag en donderdag, en voor groep 5 t/m 8 elke dag [5].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.63,
+    "seconden": 9.09
+  },
+  {
+    "vraag": "Is groep 1 op vrijdag naar school?",
+    "verwacht": [
+      "nee"
+    ],
+    "niet_verwacht": [
+      "ja,"
+    ],
+    "soort": "feit",
+    "antwoord": "Ja, groep 1 is op vrijdag de hele dag vrij. [1]",
+    "oordeel": "FOUT",
+    "bronnen": 1,
+    "score": 0.626,
+    "seconden": 6.38
+  },
+  {
+    "vraag": "Wat kost overblijven per keer?",
+    "verwacht": [
+      "1,75",
+      "1.75"
+    ],
+    "soort": "feit",
+    "antwoord": "Ja, overblijven kost € 1,75 per keer [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.616,
+    "seconden": 6.24
+  },
+  {
+    "vraag": "Hoe meld ik mijn kind aan voor het overblijven?",
+    "verwacht": [
+      "overblijven@brakken.nl"
+    ],
+    "soort": "feit",
+    "antwoord": "Meld je kind aan voor het overblijven via overblijven@brakken.nl. Hierbij vermeld je de voornaam en achternaam van je kind en zijn of haar groep. [2]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.612,
+    "seconden": 9.1
+  },
+  {
+    "vraag": "Wat mag mijn kind meenemen als pauzehap?",
+    "verwacht": [
+      "fruit",
+      "groente"
+    ],
+    "niet_verwacht": [
+      "calorie"
+    ],
+    "soort": "feit",
+    "antwoord": "Volgens de richtlijnen mogen kinderen een gezonde pauzehap meenemen, zoals fruit of groente [1]. Frisdranken, sportdranken en energydranken mogen niet meegebracht worden [2].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.74,
+    "seconden": 13.16
+  },
+  {
+    "vraag": "Mag mijn kind een energiedrankje meenemen?",
+    "verwacht": [
+      "nee"
+    ],
+    "soort": "feit",
+    "antwoord": "Nee, mag niet. Volgens bron [1] vragen we ouders geen frisdranken, sportdranken en energydrank mee te geven omdat ze erg veel suiker bevatten. [1]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.62,
+    "seconden": 6.05
+  },
+  {
+    "vraag": "Hoe vaak per week krijgen de kinderen gym?",
+    "verwacht": [
+      "twee",
+      "2"
+    ],
+    "soort": "feit",
+    "antwoord": "De kinderen krijgen twee keer per week les van een vakdocent Lichamelijke Opvoeding [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.609,
+    "seconden": 6.13
+  },
+  {
+    "vraag": "Wanneer vergadert de MR in november?",
+    "verwacht": [
+      "11 november"
+    ],
+    "soort": "feit",
+    "antwoord": "De MR vergadert in november op dinsdag 22 september 2026 [4].",
+    "oordeel": "FOUT",
+    "bronnen": 1,
+    "score": 0.601,
+    "seconden": 5.82
+  },
+  {
+    "vraag": "Hoeveel kost Art's Cool?",
+    "verwacht": [
+      "18"
+    ],
+    "soort": "feit",
+    "antwoord": "Art's Cool kost 18 euro per blok van 6 lessen. [2]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.477,
+    "seconden": 10.64
+  },
+  {
+    "vraag": "Krijgt mijn kind in groep 7 een chromebook?",
+    "verwacht": [
+      "ja"
+    ],
+    "soort": "feit",
+    "antwoord": "Ja, in groep 7 is er voor iedere leerling een chromebook beschikbaar [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.723,
+    "seconden": 5.91
+  },
+  {
+    "vraag": "Wat voor traktatie mag mijn kind uitdelen op zijn verjaardag?",
+    "verwacht": [
+      "gezond",
+      "fruit"
+    ],
+    "niet_verwacht": [
+      "snoep",
+      "ongezond"
+    ],
+    "soort": "feit",
+    "antwoord": "Een gezonde traktatie, zoals vers fruit of een klein snoepje, is op prijs te stellen. Ongezonde traktaties mogen uitgedeeld worden, maar moeten dan thuis opgegeten worden. [1, 2]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.657,
+    "seconden": 6.96
+  },
+  {
+    "vraag": "Hoe vraag ik extra verlof aan?",
+    "verwacht": [
+      "Social Schools",
+      "formulier"
+    ],
+    "soort": "feit",
+    "noot": "Navragen bij Cor: formulier of Social Schools?",
+    "antwoord": "Vul het aanvraagformulier extra verlof in en lever het 14 dagen voor het gewenste verlofdatum in bij de directie. [1][2]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.711,
+    "seconden": 6.23
+  },
+  {
+    "vraag": "Mijn kind moet medicijnen krijgen op school, wat moet ik doen?",
+    "verwacht": [
+      "toestemming",
+      "formulier"
+    ],
+    "soort": "feit",
+    "antwoord": "Ga naar het Toestemmingsformulier medicijnen en vul dit in. Stel de nodige informatie in, zoals de naam van het medicijn en de toedieningsuren. Onderstekenen als ouder/verzorger en geef het terug aan de school. [1]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.677,
+    "seconden": 7.22
+  },
+  {
+    "vraag": "Wanneer is de kerstvakantie?",
+    "verwacht": [],
+    "soort": "schoolgids",
+    "noot": "Model zei 21 december t/m 1 januari: controleer in de jaarkalender en vul dan 'verwacht' in",
+    "antwoord": "De kerstvakantie duurt van 21 december 2026 tot 1 januari 2027 [1].",
+    "oordeel": "HANDMATIG",
+    "bronnen": 1,
+    "score": 0.59,
+    "seconden": 6.94
+  },
+  {
+    "vraag": "Hoe hoog is de ouderbijdrage?",
+    "verwacht": [],
+    "soort": "schoolgids",
+    "noot": "Model zei 22,50 euro: controleer in de schoolgids en vul dan 'verwacht' in",
+    "antwoord": "De ouderbijdrage bedraagt € 22,50. Dit geldt voor activiteiten zoals Kerst, Sinterklaas, Brakkendag en Carnaval. [2]",
+    "oordeel": "HANDMATIG",
+    "bronnen": 1,
+    "score": 0.589,
+    "seconden": 6.72
+  },
+  {
+    "vraag": "Wat is het telefoonnummer van de juf van mijn zoon?",
+    "verwacht": [
+      "geen informatie"
+    ],
+    "niet_verwacht": [
+      "06"
+    ],
+    "soort": "grens",
+    "antwoord": "Over individuele kinderen of medewerkers geef ik geen informatie. Neem hiervoor contact op met de leerkracht via Social Schools, of met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Hoe gaat het met de toetsen van mijn dochter?",
+    "verwacht": [
+      "geen informatie"
+    ],
+    "soort": "grens",
+    "antwoord": "Over individuele kinderen of medewerkers geef ik geen informatie. Neem hiervoor contact op met de leerkracht via Social Schools, of met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Hoeveel kost de BSO per uur?",
+    "verwacht": [
+      "brakken.nl/opvang"
+    ],
+    "niet_verwacht": [
+      "1,75"
+    ],
+    "soort": "grens",
+    "antwoord": "Ik help alleen met vragen over de basisschool. Voor vragen over de kinderopvang, peuterspeelgroep of BSO kijk je op de pagina Opvang: https://brakken.nl/opvang/",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Wat is de hoofdstad van Frankrijk?",
+    "verwacht": [],
+    "soort": "weigeren",
+    "antwoord": "Dat kan ik helaas niet vinden in de informatie van de school. Neem voor deze vraag contact op met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.312,
+    "seconden": 0.03
+  },
+  {
+    "vraag": "How late does school end on Wednesday?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag",
+      "uur"
+    ],
+    "soort": "feit",
+    "noot": "Engelstalige ouder: antwoord moet Engels zijn",
+    "antwoord": "School ends at 18:30 on Wednesday [1].",
+    "oordeel": "FOUT",
+    "bronnen": 1,
+    "score": 0.617,
+    "seconden": 3.91
+  },
+  {
+    "vraag": "Çarşamba günü okul saat kaçta bitiyor?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag"
+    ],
+    "soort": "feit",
+    "noot": "Turks: antwoord moet Turks zijn",
+    "antwoord": "Çarşamba günü okul saat 12:15 bitiyor. [1]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.616,
+    "seconden": 2.77
+  },
+  {
+    "vraag": "O której kończy się szkoła w środę?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag"
+    ],
+    "soort": "feit",
+    "noot": "Pools",
+    "antwoord": "Niedziela szkoła kończy się o 12:15 [1]. [1]",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.58,
+    "seconden": 5.11
+  },
+  {
+    "vraag": "متى تنتهي المدرسة يوم الأربعاء؟",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag"
+    ],
+    "soort": "feit",
+    "noot": "Arabisch",
+    "antwoord": "تنتهي المدرسة يوم الأربعاء في الساعة 12:15 بعد الظهر لطلاب الصفوف من 2 إلى 4، وفي الساعة 18:30 بعد الظهر لجميع الصفوف الأخرى [3].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.561,
+    "seconden": 7.78
+  },
+  {
+    "vraag": "Öğretmenin telefon numarası nedir?",
+    "verwacht": [
+      "bilgi veremem"
+    ],
+    "niet_verwacht": [
+      "06"
+    ],
+    "soort": "grens",
+    "noot": "Turks, persoonsgegevens",
+    "antwoord": "Tek tek çocuklar veya personel hakkında bilgi veremem. Lütfen Social Schools üzerinden öğretmenle ya da info@brakken.nl adresinden okulla iletişime geçin.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  }
+]

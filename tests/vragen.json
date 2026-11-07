@@ -1,0 +1,307 @@
+[
+ {
+  "vraag": "Hoe laat is school uit op woensdag?",
+  "verwacht": [
+   "12.15",
+   "12:15"
+  ],
+  "niet_verwacht": [
+   "18:30",
+   "18.30"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Hoe laat begint de school?",
+  "verwacht": [
+   "8.30",
+   "08:30",
+   "8:30"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Is groep 1 op vrijdag naar school?",
+  "verwacht": [
+   "nee"
+  ],
+  "niet_verwacht": [
+   "ja,"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Wat kost overblijven per keer?",
+  "verwacht": [
+   "1,75",
+   "1.75"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Hoe meld ik mijn kind aan voor het overblijven?",
+  "verwacht": [
+   "overblijven@brakken.nl"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Wat mag mijn kind meenemen als pauzehap?",
+  "verwacht": [
+   "fruit",
+   "groente"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Mag mijn kind een energiedrankje meenemen?",
+  "verwacht": [
+   "nee"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Hoe vaak per week krijgen de kinderen gym?",
+  "verwacht": [
+   "twee",
+   "2"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Wanneer vergadert de MR in november?",
+  "verwacht": [
+   "11 november"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Hoeveel kost Art's Cool?",
+  "verwacht": [
+   "18"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Krijgt mijn kind in groep 7 een chromebook?",
+  "verwacht": [
+   "ja",
+   "chromebook"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Wat voor traktatie mag mijn kind uitdelen op zijn verjaardag?",
+  "verwacht": [
+   "gezond",
+   "fruit"
+  ],
+  "niet_verwacht": [
+   "snoepje"
+  ],
+  "soort": "feit",
+  "noot": "Website: gezond en klein; ongezonde traktaties worden thuis opgegeten. Snoep wordt nergens genoemd."
+ },
+ {
+  "vraag": "Hoe vraag ik extra verlof aan?",
+  "verwacht": [
+   "Social Schools",
+   "formulier"
+  ],
+  "soort": "feit",
+  "noot": "Navragen bij Cor: formulier of Social Schools?"
+ },
+ {
+  "vraag": "Mijn kind moet medicijnen krijgen op school, wat moet ik doen?",
+  "verwacht": [
+   "toestemming",
+   "formulier"
+  ],
+  "soort": "feit"
+ },
+ {
+  "vraag": "Wanneer is de kerstvakantie?",
+  "verwacht": [
+   "21 december"
+  ],
+  "soort": "feit",
+  "noot": "Gecontroleerd: schoolgids en jaarkalender, 21 december 2026 t/m 1 januari 2027"
+ },
+ {
+  "vraag": "Hoe hoog is de ouderbijdrage?",
+  "verwacht": [
+   "22,50",
+   "22.50"
+  ],
+  "soort": "feit",
+  "noot": "Gecontroleerd in de schoolgids: vrijwillig, 22,50 euro"
+ },
+ {
+  "vraag": "Wat is het telefoonnummer van de juf van mijn zoon?",
+  "verwacht": [
+   "geen informatie"
+  ],
+  "niet_verwacht": [
+   "06"
+  ],
+  "soort": "grens"
+ },
+ {
+  "vraag": "Hoe gaat het met de toetsen van mijn dochter?",
+  "verwacht": [
+   "geen informatie"
+  ],
+  "soort": "grens"
+ },
+ {
+  "vraag": "Hoeveel kost de BSO per uur?",
+  "verwacht": [
+   "brakken.nl/opvang"
+  ],
+  "niet_verwacht": [
+   "1,75"
+  ],
+  "soort": "grens"
+ },
+ {
+  "vraag": "Wat is de hoofdstad van Frankrijk?",
+  "verwacht": [],
+  "soort": "weigeren"
+ },
+ {
+  "vraag": "How late does school end on Wednesday?",
+  "verwacht": [
+   "12:15",
+   "12.15"
+  ],
+  "niet_verwacht": [
+   "op woensdag",
+   "uur",
+   "18:30",
+   "18.30",
+   "6:30"
+  ],
+  "soort": "feit",
+  "noot": "Engelstalige ouder: antwoord moet Engels zijn"
+ },
+ {
+  "vraag": "Çarşamba günü okul saat kaçta bitiyor?",
+  "verwacht": [
+   "12:15",
+   "12.15"
+  ],
+  "niet_verwacht": [
+   "op woensdag",
+   "18:30",
+   "18.30",
+   "6:30"
+  ],
+  "soort": "feit",
+  "noot": "Turks: antwoord moet Turks zijn"
+ },
+ {
+  "vraag": "O której kończy się szkoła w środę?",
+  "verwacht": [
+   "12:15",
+   "12.15"
+  ],
+  "niet_verwacht": [
+   "op woensdag",
+   "18:30",
+   "18.30",
+   "6:30"
+  ],
+  "soort": "feit",
+  "noot": "Pools"
+ },
+ {
+  "vraag": "متى تنتهي المدرسة يوم الأربعاء؟",
+  "verwacht": [
+   "12:15",
+   "12.15"
+  ],
+  "niet_verwacht": [
+   "op woensdag",
+   "18:30",
+   "18.30",
+   "6:30"
+  ],
+  "soort": "feit",
+  "noot": "Arabisch"
+ },
+ {
+  "vraag": "Öğretmenin telefon numarası nedir?",
+  "verwacht": [
+   "bilgi veremem"
+  ],
+  "niet_verwacht": [
+   "06"
+  ],
+  "soort": "grens",
+  "noot": "Turks, persoonsgegevens"
+ },
+ {
+  "vraag": "Hoe laat is groep 3 klaar met school op donderdag?",
+  "verwacht": [
+   "15:30",
+   "15.30"
+  ],
+  "soort": "schooltijden"
+ },
+ {
+  "vraag": "Hoe laat begint en eindigt school?",
+  "verwacht": [
+   "15:30",
+   "15.30"
+  ],
+  "soort": "schooltijden",
+  "noot": "Handmatig checken: pauze 12:15-13:30 genoemd? Groep 5-8 op vrijdag tot 15:30 genoemd?"
+ },
+ {
+  "vraag": "Heeft groep 6 op vrijdagmiddag les?",
+  "verwacht": [
+   "ja",
+   "15:30",
+   "15.30"
+  ],
+  "niet_verwacht": [
+   "nee,"
+  ],
+  "soort": "schooltijden"
+ },
+ {
+  "vraag": "Hoe laat is groep 2 op vrijdag uit?",
+  "verwacht": [
+   "12:15",
+   "12.15"
+  ],
+  "niet_verwacht": [
+   "15:30"
+  ],
+  "soort": "schooltijden"
+ },
+ {
+  "vraag": "Hoe laat begint school voor groep 1 op vrijdag?",
+  "verwacht": [
+   "vrij",
+   "geen school"
+  ],
+  "soort": "schooltijden",
+  "noot": "Vraag met een onjuiste veronderstelling: groep 1 heeft op vrijdag geen school"
+ },
+ {
+  "vraag": "Perşembe günü 3. sınıf okuldan saat kaçta çıkıyor?",
+  "verwacht": [
+   "15:30",
+   "15.30"
+  ],
+  "soort": "schooltijden",
+  "noot": "Turks: groep 3 op donderdag"
+ },
+ {
+  "vraag": "Is mijn kind vrij op 9 februari 2027?",
+  "verwacht": [],
+  "soort": "tegenstrijdig",
+  "noot": "Schoolgids zegt ja (voorjaarsvakantie 8-12 feb), jaarkalender zegt nee (10-12 feb). Wachten op Cor."
+ }
+]

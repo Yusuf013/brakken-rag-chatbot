@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vraag het De Brakken</title>
+<style>
+  :root {
+    --bg: #f6f7f4; --card: #ffffff; --text: #1f2a24; --muted: #5d6b63;
+    --accent: #2f7d5b; --accent-soft: #e4f1ea; --border: #dde3de;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         background: var(--bg); color: var(--text); }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px; min-height: 100vh;
+          display: flex; flex-direction: column; }
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  header h1 { font-size: 1.4rem; margin: 0 0 4px; }
+  header p { margin: 0; color: var(--muted); font-size: .9rem; }
+  select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px;
+           background: var(--card); font-size: .9rem; color: var(--text); }
+  .notice { margin: 16px 0; padding: 10px 12px; background: var(--accent-soft);
+            border-radius: 8px; font-size: .85rem; }
+  #log { flex: 1; display: flex; flex-direction: column; gap: 12px; padding: 8px 0; }
+  .msg { padding: 12px 14px; border-radius: 12px; max-width: 90%; line-height: 1.45;
+         white-space: pre-wrap; animation: pop .2s ease-out; }
+  .user { align-self: flex-end; background: var(--accent); color: #fff; }
+  .bot { align-self: flex-start; background: var(--card); border: 1px solid var(--border); }
+  .msg[dir="rtl"] { text-align: right; }
+  .sources { margin-top: 8px; font-size: .82rem; color: var(--muted); white-space: normal; }
+  .sources a { color: var(--accent); }
+
+  /* "Even zoeken" met drie springende puntjes */
+  .typing { display: inline-flex; align-items: center; gap: 10px; color: var(--muted); }
+  .dots { display: inline-flex; gap: 4px; }
+  .dots span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+               animation: bounce 1.2s infinite ease-in-out; }
+  .dots span:nth-child(2) { animation-delay: .15s; }
+  .dots span:nth-child(3) { animation-delay: .3s; }
+  @keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: .4; }
+    30% { transform: translateY(-6px); opacity: 1; }
+  }
+  @keyframes pop { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .dots span, .msg { animation: none; }
+    .dots span { opacity: .7; }
+  }
+
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .examples button { border: 1px solid var(--border); background: var(--card); border-radius: 999px;
+                     padding: 6px 12px; font-size: .85rem; cursor: pointer; color: var(--text); }
+  form { display: flex; gap: 8px; position: sticky; bottom: 0; background: var(--bg); padding: 12px 0; }
+  input { flex: 1; padding: 12px; border: 1px solid var(--border); border-radius: 10px; font-size: 1rem; }
+  button[type=submit] { padding: 0 18px; border: 0; border-radius: 10px; background: var(--accent);
+                        color: #fff; font-size: 1rem; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1 data-t="title">Vraag het De Brakken</h1>
+      <p data-t="subtitle">Snel antwoord op praktische vragen over de basisschool.</p>
+    </div>
+    <select id="lang" aria-label="Taal / Language">
+      <option value="auto">🌐 Automatisch</option>
+      <option value="nl">Nederlands</option>
+      <option value="en">English</option>
+      <option value="tr">Türkçe</option>
+      <option value="ar">العربية</option>
+      <option value="pl">Polski</option>
+      <option value="uk">Українська</option>
+    </select>
+  </header>
+  <div class="notice" data-t="notice"></div>
+  <div class="examples" id="examples"></div>
+  <div id="log" aria-live="polite"></div>
+  <form id="form">
+    <input id="q" autocomplete="off" maxlength="500" required>
+    <button type="submit" id="send"></button>
+  </form>
+</div>
+<script>
+  // Teksten van de pagina per taal. Laat ze controleren door een moedertaalspreker.
+  const UI = {
+    nl: { title: "Vraag het De Brakken", subtitle: "Snel antwoord op praktische vragen over de basisschool.",
+          notice: "Dit is een AI-assistent (prototype). Antwoorden komen uit de documenten op de website; controleer belangrijke informatie altijd via de bron. Typ geen persoonlijke gegevens.",
+          placeholder: "Stel je vraag...", send: "Vraag", searching: "Even zoeken", sources: "Bronnen", error: "Er ging iets mis",
+          examples: ["Hoe laat begint en eindigt school?", "Hoe vraag ik extra verlof aan?", "Wat mag mijn kind meenemen als pauzehap?", "Wat kost overblijven?"] },
+    en: { title: "Ask De Brakken", subtitle: "Quick answers to practical questions about the primary school.",
+          notice: "This is an AI assistant (prototype). Answers come from the documents on the school website; always check important information in the source. Do not type personal details.",
+          placeholder: "Ask your question...", send: "Ask", searching: "Searching", sources: "Sources", error: "Something went wrong",
+          examples: ["What are the school hours?", "How do I request extra leave?", "What snack can my child bring?", "How much does lunch supervision cost?"] },
+    tr: { title: "De Brakken'e sorun", subtitle: "İlkokulla ilgili pratik sorulara hızlı yanıtlar.",
+          notice: "Bu bir yapay zekâ asistanıdır (prototip). Yanıtlar okulun web sitesindeki belgelerden gelir; önemli bilgileri her zaman kaynaktan kontrol edin. Kişisel bilgilerinizi yazmayın.",
+          placeholder: "Sorunuzu yazın...", send: "Sor", searching: "Aranıyor", sources: "Kaynaklar", error: "Bir sorun oluştu",
+          examples: ["Okul saatleri nedir?", "Ek izin nasıl istenir?", "Çocuğum teneffüs için ne getirebilir?", "Öğle yemeği gözetimi ne kadar?"] },
+    ar: { title: "اسأل De Brakken", subtitle: "إجابات سريعة عن أسئلة عملية حول المدرسة الابتدائية.",
+          notice: "هذا مساعد يعمل بالذكاء الاصطناعي (نموذج تجريبي). الإجابات مأخوذة من وثائق موقع المدرسة؛ تحقّق دائماً من المعلومات المهمة في المصدر. لا تكتب بيانات شخصية.",
+          placeholder: "اكتب سؤالك...", send: "اسأل", searching: "جارٍ البحث", sources: "المصادر", error: "حدث خطأ",
+          examples: ["ما هي مواعيد الدراسة؟", "كيف أطلب إجازة إضافية؟", "ماذا يمكن لطفلي أن يحضر كوجبة خفيفة؟"] },
+    pl: { title: "Zapytaj De Brakken", subtitle: "Szybkie odpowiedzi na praktyczne pytania o szkołę podstawową.",
+          notice: "To asystent AI (prototyp). Odpowiedzi pochodzą z dokumentów na stronie szkoły; ważne informacje zawsze sprawdzaj w źródle. Nie wpisuj danych osobowych.",
+          placeholder: "Zadaj pytanie...", send: "Zapytaj", searching: "Szukam", sources: "Źródła", error: "Coś poszło nie tak",
+          examples: ["W jakich godzinach są lekcje?", "Jak poprosić o dodatkowy urlop?", "Co dziecko może przynieść na przerwę?"] },
+    uk: { title: "Запитайте De Brakken", subtitle: "Швидкі відповіді на практичні питання про початкову школу.",
+          notice: "Це помічник зі штучним інтелектом (прототип). Відповіді беруться з документів на сайті школи; важливу інформацію завжди перевіряйте за джерелом. Не вводьте особисті дані.",
+          placeholder: "Поставте запитання...", send: "Запитати", searching: "Шукаю", sources: "Джерела", error: "Щось пішло не так",
+          examples: ["Який розклад уроків?", "Як попросити додаткову відпустку?", "Що дитина може взяти на перекус?"] },
+  };
+  const RTL = new Set(["ar"]);
+
+  const log = document.getElementById("log");
+  const form = document.getElementById("form");
+  const input = document.getElementById("q");
+  const send = document.getElementById("send");
+  const langSelect = document.getElementById("lang");
+
+  function uiLang() {
+    const v = langSelect.value;
+    if (v !== "auto") return v;
+    const browser = (navigator.language || "nl").slice(0, 2);
+    return UI[browser] ? browser : "nl";
+  }
+
+  function applyLanguage() {
+    const t = UI[uiLang()];
+    document.documentElement.lang = uiLang();
+    document.documentElement.dir = RTL.has(uiLang()) ? "rtl" : "ltr";
+    document.querySelectorAll("[data-t]").forEach((el) => (el.textContent = t[el.dataset.t]));
+    input.placeholder = t.placeholder;
+    send.textContent = t.send;
+    const ex = document.getElementById("examples");
+    ex.replaceChildren(...t.examples.map((q) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.textContent = q;
+      b.addEventListener("click", () => ask(q));
+      return b;
+    }));
+    try { localStorage.setItem("lang", langSelect.value); } catch (e) {}
+  }
+
+  function add(text, cls) {
+    const div = document.createElement("div");
+    div.className = "msg " + cls;
+    div.textContent = text;           // textContent: geen HTML-injectie mogelijk
+    log.appendChild(div);
+    div.scrollIntoView({ behavior: "smooth", block: "end" });
+    return div;
+  }
+
+  function addTyping() {
+    const div = document.createElement("div");
+    div.className = "msg bot";
+    const wrap = document.createElement("span");
+    wrap.className = "typing";
+    const dots = document.createElement("span");
+    dots.className = "dots";
+    dots.append(document.createElement("span"), document.createElement("span"), document.createElement("span"));
+    wrap.append(dots, UI[uiLang()].searching);
+    div.appendChild(wrap);
+    log.appendChild(div);
+    div.scrollIntoView({ behavior: "smooth", block: "end" });
+    return div;
+  }
+
+  function addSources(div, sources) {
+    if (!sources || !sources.length) return;
+    const box = document.createElement("div");
+    box.className = "sources";
+    box.append(UI[uiLang()].sources + ": ");
+    sources.forEach((s, i) => {
+      const a = document.createElement("a");
+      a.href = s.url; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = `[${s.nr}] ${s.title}${s.page ? ", p. " + s.page : ""}`;
+      box.append(a);
+      if (i < sources.length - 1) box.append(" · ");
+    });
+    div.appendChild(box);
+  }
+
+  async function ask(question) {
+    const userMsg = add(question, "user");
+    userMsg.dir = "auto";
+    const pending = addTyping();
+    send.disabled = true;
+    try {
+      const res = await fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question, language: langSelect.value })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || UI[uiLang()].error);
+      pending.textContent = data.answer;
+      pending.dir = RTL.has(data.language) ? "rtl" : "ltr";
+      addSources(pending, data.sources);
+    } catch (err) {
+      pending.textContent = UI[uiLang()].error + ": " + err.message;
+    } finally {
+      send.disabled = false;
+      input.focus();
+    }
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    input.value = "";
+    ask(q);
+  });
+
+  try { const saved = localStorage.getItem("lang"); if (saved) langSelect.value = saved; } catch (e) {}
+  langSelect.addEventListener("change", applyLanguage);
+  applyLanguage();
+</script>
+</body>
+</html>

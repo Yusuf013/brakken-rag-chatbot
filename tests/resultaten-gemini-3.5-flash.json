@@ -1,0 +1,467 @@
+[
+  {
+    "vraag": "Hoe laat is school uit op woensdag?",
+    "verwacht": [
+      "12.15",
+      "12:15"
+    ],
+    "niet_verwacht": [
+      "18:30",
+      "18.30"
+    ],
+    "soort": "feit",
+    "antwoord": "Op woensdag is de school om 12:15 uur uit voor alle groepen [1] [2].",
+    "oordeel": "OK",
+    "bronnen": 2,
+    "score": 0.619,
+    "seconden": 4.52
+  },
+  {
+    "vraag": "Hoe laat begint de school?",
+    "verwacht": [
+      "8.30",
+      "08:30",
+      "8:30"
+    ],
+    "soort": "feit",
+    "antwoord": "De school begint elke ochtend om 08:30 uur [2, 5]. Dit geldt voor groep 1 t/m 8 van maandag tot en met vrijdag [5]. Groep 1 is op vrijdag de hele dag vrij [2, 5].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.63,
+    "seconden": 19.88
+  },
+  {
+    "vraag": "Is groep 1 op vrijdag naar school?",
+    "verwacht": [
+      "nee"
+    ],
+    "niet_verwacht": [
+      "ja,"
+    ],
+    "soort": "feit",
+    "antwoord": "Nee, groep 1 is op vrijdag de hele dag vrij [1, 2].",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.626,
+    "seconden": 5.85
+  },
+  {
+    "vraag": "Wat kost overblijven per keer?",
+    "verwacht": [
+      "1,75",
+      "1.75"
+    ],
+    "soort": "feit",
+    "antwoord": "Overblijven kost € 1,75 per keer [1], [2].",
+    "oordeel": "OK",
+    "bronnen": 2,
+    "score": 0.616,
+    "seconden": 2.12
+  },
+  {
+    "vraag": "Hoe meld ik mijn kind aan voor het overblijven?",
+    "verwacht": [
+      "overblijven@brakken.nl"
+    ],
+    "soort": "feit",
+    "antwoord": "U kunt uw kind voor het overblijven aanmelden door een e-mail te sturen naar overblijven@brakken.nl [2][4].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.612,
+    "seconden": 2.62
+  },
+  {
+    "vraag": "Wat mag mijn kind meenemen als pauzehap?",
+    "verwacht": [
+      "fruit",
+      "groente"
+    ],
+    "soort": "feit",
+    "antwoord": "Als pauzehap mag uw kind fruit meenemen, zoals een appel, peer, banaan, kiwi, druiven, meloen, pruim of mandarijn [1]. Ook groente is toegestaan, zoals worteltjes, komkommer, paprika, snoeptomaatjes en radijsjes [1]. Geef iets mee wat niet te groot is en niet te veel calorieën bevat [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.74,
+    "seconden": 8.61
+  },
+  {
+    "vraag": "Mag mijn kind een energiedrankje meenemen?",
+    "verwacht": [
+      "nee"
+    ],
+    "soort": "feit",
+    "antwoord": "Nee, wij vragen ouders om geen energydrank mee te geven [1, 2]. Dit komt doordat er erg veel suiker in zit [1, 2].",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.62,
+    "seconden": 1.75
+  },
+  {
+    "vraag": "Hoe vaak per week krijgen de kinderen gym?",
+    "verwacht": [
+      "twee",
+      "2"
+    ],
+    "soort": "feit",
+    "antwoord": "De kinderen van groep 1 tot en met 8 krijgen twee keer per week gymles van een vakdocent Lichamelijke Opvoeding [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.609,
+    "seconden": 2.78
+  },
+  {
+    "vraag": "Wanneer vergadert de MR in november?",
+    "verwacht": [
+      "11 november"
+    ],
+    "soort": "feit",
+    "antwoord": "De MR vergadert in november op woensdag 11 november om 20.00 uur [1, 4].",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.601,
+    "seconden": 2.95
+  },
+  {
+    "vraag": "Hoeveel kost Art's Cool?",
+    "verwacht": [
+      "18"
+    ],
+    "soort": "feit",
+    "antwoord": "Deelnemen aan Art's Cool kost 18 euro per blok [1], [2]. Het programma bestaat uit blokken van 6 lessen van een uur [1], [2].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.477,
+    "seconden": 6.39
+  },
+  {
+    "vraag": "Krijgt mijn kind in groep 7 een chromebook?",
+    "verwacht": [
+      "ja",
+      "chromebook"
+    ],
+    "soort": "feit",
+    "antwoord": "Ja, in de groepen 6, 7 en 8 is er voor iedere leerling een chromebook beschikbaar [1].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.723,
+    "seconden": 2.17
+  },
+  {
+    "vraag": "Wat voor traktatie mag mijn kind uitdelen op zijn verjaardag?",
+    "verwacht": [
+      "gezond",
+      "fruit"
+    ],
+    "niet_verwacht": [
+      "snoepje"
+    ],
+    "soort": "feit",
+    "noot": "Website: gezond en klein; ongezonde traktaties worden thuis opgegeten. Snoep wordt nergens genoemd.",
+    "antwoord": "Een gezonde en kleine traktatie heeft de voorkeur, zoals vers fruit, groente of hooguit één klein snoepje [1]. Er mag op school niet getrakteerd worden op cadeautjes [1, 2]. Ongezonde traktaties mogen wel worden uitgedeeld, maar gaan in de tas mee naar huis en worden niet op school opgegeten [2].",
+    "oordeel": "FOUT",
+    "bronnen": 1,
+    "score": 0.657,
+    "seconden": 5.85
+  },
+  {
+    "vraag": "Hoe vraag ik extra verlof aan?",
+    "verwacht": [
+      "Social Schools",
+      "formulier"
+    ],
+    "soort": "feit",
+    "noot": "Navragen bij Cor: formulier of Social Schools?",
+    "antwoord": "U kunt extra verlof aanvragen via Social Schools. U levert het aanvraagformulier extra verlof 14 dagen vóór de gewenste verlofdatum in bij de directie [1, 2].",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.711,
+    "seconden": 4.72
+  },
+  {
+    "vraag": "Mijn kind moet medicijnen krijgen op school, wat moet ik doen?",
+    "verwacht": [
+      "toestemming",
+      "formulier"
+    ],
+    "soort": "feit",
+    "antwoord": "Als uw kind medicijnen op school moet krijgen, vult u het 'TOESTEMMINGSFORMULIER VOOR HET TOEDIENEN VAN MEDICIJNEN' in [1]. Met dit formulier geeft u de school en de leerkracht toestemming om de medicijnen toe te dienen [1]. U bent als ouder zelf verantwoordelijk voor de houdbaarheidsdatum van het medicijn [5].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.677,
+    "seconden": 4.31
+  },
+  {
+    "vraag": "Wanneer is de kerstvakantie?",
+    "verwacht": [
+      "21 december"
+    ],
+    "soort": "feit",
+    "noot": "Gecontroleerd: schoolgids en jaarkalender, 21 december 2026 t/m 1 januari 2027",
+    "antwoord": "De kerstvakantie is van 21 december 2026 tot en met 1 januari 2027 [2].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.59,
+    "seconden": 1.55
+  },
+  {
+    "vraag": "Hoe hoog is de ouderbijdrage?",
+    "verwacht": [
+      "22,50",
+      "22.50"
+    ],
+    "soort": "feit",
+    "noot": "Gecontroleerd in de schoolgids: vrijwillig, 22,50 euro",
+    "antwoord": "De vrijwillige ouderbijdrage is € 22,50 per schooljaar [2].",
+    "oordeel": "OK",
+    "bronnen": 1,
+    "score": 0.589,
+    "seconden": 1.79
+  },
+  {
+    "vraag": "Wat is het telefoonnummer van de juf van mijn zoon?",
+    "verwacht": [
+      "geen informatie"
+    ],
+    "niet_verwacht": [
+      "06"
+    ],
+    "soort": "grens",
+    "antwoord": "Over individuele kinderen of medewerkers geef ik geen informatie. Neem hiervoor contact op met de leerkracht via Social Schools, of met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Hoe gaat het met de toetsen van mijn dochter?",
+    "verwacht": [
+      "geen informatie"
+    ],
+    "soort": "grens",
+    "antwoord": "Over individuele kinderen of medewerkers geef ik geen informatie. Neem hiervoor contact op met de leerkracht via Social Schools, of met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Hoeveel kost de BSO per uur?",
+    "verwacht": [
+      "brakken.nl/opvang"
+    ],
+    "niet_verwacht": [
+      "1,75"
+    ],
+    "soort": "grens",
+    "antwoord": "Ik help alleen met vragen over de basisschool. Voor vragen over de kinderopvang, peuterspeelgroep of BSO kijk je op de pagina Opvang: https://brakken.nl/opvang/",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Wat is de hoofdstad van Frankrijk?",
+    "verwacht": [],
+    "soort": "weigeren",
+    "antwoord": "Dat kan ik helaas niet vinden in de informatie van de school. Neem voor deze vraag contact op met de school via info@brakken.nl.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.312,
+    "seconden": 0.03
+  },
+  {
+    "vraag": "How late does school end on Wednesday?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag",
+      "uur",
+      "18:30",
+      "18.30",
+      "6:30"
+    ],
+    "soort": "feit",
+    "noot": "Engelstalige ouder: antwoord moet Engels zijn",
+    "antwoord": "On Wednesday, school ends at 12:15 for all students in group 1 t/m 8 [1, 2].",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": 0.635,
+    "seconden": 46.8
+  },
+  {
+    "vraag": "Çarşamba günü okul saat kaçta bitiyor?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag",
+      "18:30",
+      "18.30",
+      "6:30"
+    ],
+    "soort": "feit",
+    "noot": "Turks: antwoord moet Turks zijn",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 71.81
+  },
+  {
+    "vraag": "O której kończy się szkoła w środę?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag",
+      "18:30",
+      "18.30",
+      "6:30"
+    ],
+    "soort": "feit",
+    "noot": "Pools",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 71.7
+  },
+  {
+    "vraag": "متى تنتهي المدرسة يوم الأربعاء؟",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "op woensdag",
+      "18:30",
+      "18.30",
+      "6:30"
+    ],
+    "soort": "feit",
+    "noot": "Arabisch",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 71.93
+  },
+  {
+    "vraag": "Öğretmenin telefon numarası nedir?",
+    "verwacht": [
+      "bilgi veremem"
+    ],
+    "niet_verwacht": [
+      "06"
+    ],
+    "soort": "grens",
+    "noot": "Turks, persoonsgegevens",
+    "antwoord": "Tek tek çocuklar veya personel hakkında bilgi veremem. Lütfen Social Schools üzerinden öğretmenle ya da info@brakken.nl adresinden okulla iletişime geçin.",
+    "oordeel": "OK",
+    "bronnen": 0,
+    "score": -1.0,
+    "seconden": 0.0
+  },
+  {
+    "vraag": "Hoe laat is groep 3 klaar met school op donderdag?",
+    "verwacht": [
+      "15:30",
+      "15.30"
+    ],
+    "soort": "schooltijden",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 35.93
+  },
+  {
+    "vraag": "Hoe laat begint en eindigt school?",
+    "verwacht": [
+      "15:30",
+      "15.30"
+    ],
+    "soort": "schooltijden",
+    "noot": "Handmatig checken: pauze 12:15-13:30 genoemd? Groep 5-8 op vrijdag tot 15:30 genoemd?",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 36.01
+  },
+  {
+    "vraag": "Heeft groep 6 op vrijdagmiddag les?",
+    "verwacht": [
+      "ja",
+      "15:30",
+      "15.30"
+    ],
+    "niet_verwacht": [
+      "nee,"
+    ],
+    "soort": "schooltijden",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 36.17
+  },
+  {
+    "vraag": "Hoe laat is groep 2 op vrijdag uit?",
+    "verwacht": [
+      "12:15",
+      "12.15"
+    ],
+    "niet_verwacht": [
+      "15:30"
+    ],
+    "soort": "schooltijden",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 35.96
+  },
+  {
+    "vraag": "Hoe laat begint school voor groep 1 op vrijdag?",
+    "verwacht": [
+      "vrij",
+      "geen school"
+    ],
+    "soort": "schooltijden",
+    "noot": "Vraag met een onjuiste veronderstelling: groep 1 heeft op vrijdag geen school",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 35.99
+  },
+  {
+    "vraag": "Perşembe günü 3. sınıf okuldan saat kaçta çıkıyor?",
+    "verwacht": [
+      "15:30",
+      "15.30"
+    ],
+    "soort": "schooltijden",
+    "noot": "Turks: groep 3 op donderdag",
+    "antwoord": "[fout: 429 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota e]",
+    "oordeel": "FOUT",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 71.84
+  },
+  {
+    "vraag": "Is mijn kind vrij op 9 februari 2027?",
+    "verwacht": [],
+    "soort": "tegenstrijdig",
+    "noot": "Schoolgids zegt ja (voorjaarsvakantie 8-12 feb), jaarkalender zegt nee (10-12 feb). Wachten op Cor.",
+    "antwoord": "[fout: 403 van https://generativelanguage.googleapis.com/v1beta/openai/chat/completions: [{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your billing account has an outstanding balance. Make a payment at https://aistudio.google.com/billing to restore service. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable.\",\n    \"status\": \"PERMISSION]",
+    "oordeel": "HANDMATIG",
+    "bronnen": 0,
+    "score": 0.0,
+    "seconden": 35.93
+  }
+]
